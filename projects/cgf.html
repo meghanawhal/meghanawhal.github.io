@@ -1,0 +1,239 @@
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+<script type="text/javascript">
+LatexIT.add('p',true);
+</script>
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-size:30px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+  <head>
+		<title>Continuous Graph Flow</title>
+		<meta property="og:image" content="~/projects/cgf/resources/teaser.png"/>
+		<meta property="og:title" content="Continuous Graph Flow" />
+		<!-- <meta property="og:description" content="Under Submission." /> -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75863369-6"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-75863369-6');
+		</script>
+  </head>
+
+  <body>
+    <br>
+          <center>
+          	<span style="font-size:34px">Continuous Graph Flow</span>
+	  		  <table align=center width=750px>
+                            <tr>
+	  	              <td align=center width=100px>
+	  					<center>
+                                                    <p style="margin-bottom:0.05cm;"><br></p>
+                                                    <span style="font-size:18px"><a href="http://www.sfu.ca/~zhiweid">Zhiwei Deng</a><sup>*</sup> &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:18px"><a href="http://www.sfu.ca/~mnawhal/">Megha Nawhal</a><sup>*</sup> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://lilimeng1103.wixsite.com/research-site">Lili Meng</a> &nbsp;&nbsp;&nbsp;&nbsp;  <a href="https://www2.cs.sfu.ca/~mori/">Greg Mori</a> </span><br>
+		  		  		</center>
+		  		  	  </td>
+
+		  		  </tr>
+			  </table>
+          </center>
+          <p style="margin-bottom:0.5cm;"><br></p>
+          <center>
+  		  <table align=center width=750px>
+  			  <tr>
+  					<center>
+  	                	<img class="round" style="width:800px" src="./cgf/resources/teaser.png"/>
+	  				</center>
+  	              </td>
+  		  </table>
+  		</center>
+
+          <hr>
+
+
+  		  <table align=center width=800px>
+	  		  <center><h1>Abstract</h1></center>
+	  		  <tr>
+	  		  	<td>
+In this paper, we propose <i>Continuous Graph Flow</i>, a generative continuous flow based method that aims to model complex distributions of graph-structured data.  Once learned, the model can be applied to an arbitrary graph, defining a probability density over the random variables represented by the graph. It is formulated as an
+ordinary differential equation system with shared and reusable functions that operate over the graphs.  This leads to a new type of neural graph message passing scheme that performs <i>continuous message passing</i> over time.
+This class of models offers several advantages: a flexible representation that can generalize to variable data dimensions; ability to model dependencies in complex data distributions; reversible and memory-efficient; and exact and efficient computation of the likelihood of the data. We demonstrate the effectiveness of our model on a diverse set of generation tasks across different domains: graph generation, image puzzle generation, and layout generation from scene graphs. Our proposed model achieves significantly better performance compared to state-of-the-art models.
+	  		    </td>
+	  		  </tr>
+			</table>
+
+		  <hr>
+        <center><h1>Results</h1></center>
+        <center><h3>Image Puzzle Generation</h3></center>
+        <table align=center width=450px>
+        <tr>
+  	  <td><img class="round" style="width:440px" src="./cgf/resources/results1.png"/></td>
+         </tr>
+         </table>
+
+        <center><h3>Graph Generation</h3></center>
+        <table align=center width=600px>
+        <tr>
+  	  <td><img class="round" style="width:550px" src="./cgf/resources/results2.png"/></td>
+         </tr>
+         </table>
+
+        <center><h3>Scene Layout Generation</h3></center>
+        <table align=center width=600px>
+        <tr>
+  	  <td><img class="round" style="width:550px" src="./cgf/resources/results3.png"/></td>
+         </tr>
+         </table>
+		  <hr>
+
+  		  <!-- <table align=center width=550px> -->
+  		  <table align=center width=750px>
+	 		<center><h1>Paper and Supplementary Material</h1></center>
+  			  <tr>
+				  <td><a href="https://arxiv.org/abs/1908.02436"><img class="layered-paper-big" style="height:160px" src="./cgf/resources/paper.png"/></a></td>
+				  <td><span style="font-size:12pt">
+				  <b>Continuous Graph Flow. </b><br>
+                                   Z. Deng, M. Nawhal, L. Meng, G. Mori <br>
+                                  <em>ICML 2020 - Workshop on Graph Representation Learning and Beyond </em><br> 
+				  <a href="./cgf/resources/ws.pdf">Paper</a><br>
+				  (Detailed version hosted on <a href="https://arxiv.org/abs/1908.02436">arXiv</a>)<br>
+                                  (Code available on <a href="https://github.com/Lucas2012/ContinuousGraphFlow">Github</a>)<br> 
+				  <!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+				  <span style="font-size:4pt"><a href=""><br></a>
+				  </span>
+				  </td>
+  	              </td>
+              </tr>
+  		  </table>
+		  <br>
+
+             <br>
+             <hr>
+            <br>
+        <table style="font-size:11px" align=center>
+        <tr>
+        <td>
+            Template borrowed from <a href='https://richzhang.github.io/colorization/'>Richard Zhang</a>.
+        </td>
+        </tr>
+        </table> 
+</body>
+</html>
+ 
